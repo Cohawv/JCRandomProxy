@@ -8,7 +8,7 @@ import (
 )
 func GetAProxyA() (string,string,error){
 	// fmt.Println(Conf.PPIP)
-	ppCountUrl := Conf.PPIP + ":" + Conf.PPPort + "/get_status/"
+	ppCountUrl := Conf.PPIP + ":" + Conf.PPPort + "/count/"
 	ppGetUrl := Conf.PPIP + ":" + Conf.PPPort + "/get/"
 	// 查看当前有多少代理
 	req, err := http.NewRequest("GET",ppCountUrl,nil)
